@@ -27,9 +27,6 @@
   - [Classic Cinema Catalog](#classic-cinema-catalog)
   - [Featured Movie Titles](#featured-movie-titles)
   - [Iconic Quotes Archive](#iconic-quotes-archive)
-- [Git & Version Control Highlights](#git--version-control-highlights)
-  - [Branching & PR Workflow](#branching--pr-workflow)
-  - [Security & Ignore Rules](#security--ignore-rules)
 - [Getting Started](#getting-started)
 - [Author & Credits](#author--credits)
 
@@ -118,46 +115,6 @@ Cinematic dialogue archives located in [`quotes/`](quotes/):
 > *"When Is A Gift Not A Gift?"*  
 > *"The spice must flow."*  
 > *"Fear is the mind-killer."*
-
----
-
-## Git & Version Control Highlights
-
-This repository demonstrates essential software engineering and version control skills:
-
-### Branching & PR Workflow
-
-```mermaid
-gitgraph
-   commit id: "Initial commit"
-   commit id: "Add titles"
-   commit id: "Add quotes"
-   branch add_classics
-   checkout add_classics
-   commit id: "Add classics"
-   checkout main
-   commit id: "Update contents"
-   merge add_classics id: "Merge classics"
-   commit id: "Add ben"
-   checkout add_classics
-   commit id: "Add Dune quotes"
-   commit id: "Add Psycho"
-   checkout main
-   merge add_classics id: "Merge PR 1"
-   commit id: "Add gitignore"
-   commit id: "Add advert"
-```
-
-1. **Feature Branching:** Isolated development branch `add_classics` for catalog extension.
-2. **Pull Request Merging:** Clean merge integration of PR #1 into `main`.
-3. **Traceable History:** Meaningful commit progression tracking iterative documentation and asset management.
-
-### Security & Ignore Rules
-
-To maintain clean repository hygiene, [`.gitignore`](.gitignore) enforces exclusion of:
-- `secure/`: Protects confidential credentials and keys from ever reaching version control.
-- `guilty_pleasures.md`: Demonstrates keeping local, untracked notes private.
-- `advert.html`: Excludes compiled output formats generated from source markdown.
 
 ---
 
