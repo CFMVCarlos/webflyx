@@ -18,24 +18,24 @@
 
 ---
 
-## 📖 Table of Contents
+## Table of Contents
 
-- [Overview](#-overview)
-- [Key Features](#-key-features)
-- [Repository Architecture](#-repository-architecture)
-- [Movie Catalog & Content](#-movie-catalog--content)
+- [Overview](#overview)
+- [Key Features](#key-features)
+- [Repository Architecture](#repository-architecture)
+- [Movie Catalog & Content](#movie-catalog--content)
   - [Classic Cinema Catalog](#classic-cinema-catalog)
   - [Featured Movie Titles](#featured-movie-titles)
   - [Iconic Quotes Archive](#iconic-quotes-archive)
-- [Git & Version Control Highlights](#-git--version-control-highlights)
+- [Git & Version Control Highlights](#git--version-control-highlights)
   - [Branching & PR Workflow](#branching--pr-workflow)
   - [Security & Ignore Rules](#security--ignore-rules)
-- [Getting Started](#-getting-started)
-- [Author & Credits](#-author--credits)
+- [Getting Started](#getting-started)
+- [Author & Credits](#author--credits)
 
 ---
 
-## 🚀 Overview
+## Overview
 
 **WebFlyx** is a retro-futuristic movie catalog repository developed as part of the **[Boot.dev](https://www.boot.dev/)** Git and Version Control curriculum. 
 
@@ -43,7 +43,7 @@ It combines the humorous lore of a 1980s/90s floppy-disk content distributor wit
 
 ---
 
-## ✨ Key Features
+## Key Features
 
 - **📼 Retro Floppy Media Hub:** Curated catalog of vintage cinema favorites, cult classics, and drama masterpieces.
 - **💬 Iconic Cinema Quotes:** Structured markdown collections capturing memorable lines from legendary Sci-Fi sagas (*Star Wars*, *Dune*).
@@ -52,7 +52,7 @@ It combines the humorous lore of a 1980s/90s floppy-disk content distributor wit
 
 ---
 
-## 📂 Repository Architecture
+## Repository Architecture
 
 ```text
 webflyx/
@@ -73,7 +73,7 @@ webflyx/
 
 ---
 
-## 🎬 Movie Catalog & Content
+## Movie Catalog & Content
 
 ### Classic Cinema Catalog
 
@@ -114,12 +114,14 @@ Cinematic dialogue archives located in [`quotes/`](quotes/):
 #### 🏜️ *Dune* ([`quotes/dune.md`](quotes/dune.md))
 > *"May thy knife chip and shatter"*  
 > *"A Great Man Doesn't Seek To Lead. He's Called To It."*  
+> *"An Animal Caught In A Trap Will Gnaw Off Its Own Leg To Escape. What Will You Do?"*  
+> *"When Is A Gift Not A Gift?"*  
 > *"The spice must flow."*  
 > *"Fear is the mind-killer."*
 
 ---
 
-## 🛠️ Git & Version Control Highlights
+## Git & Version Control Highlights
 
 This repository demonstrates essential software engineering and version control skills:
 
@@ -127,17 +129,23 @@ This repository demonstrates essential software engineering and version control 
 
 ```mermaid
 gitgraph
-   commit id: "Initial Commit"
-   commit id: "Add contents index"
+   commit id: "Initial commit"
+   commit id: "Add titles"
+   commit id: "Add quotes"
    branch add_classics
    checkout add_classics
-   commit id: "Add classics.csv"
-   commit id: "Add psycho to classics"
+   commit id: "Add classics"
    checkout main
-   commit id: "Add movie quotes"
-   merge add_classics id: "Merge PR #1 (add_classics)"
-   commit id: "Configure .gitignore"
-   commit id: "Finalize advert"
+   commit id: "Update contents"
+   merge add_classics id: "Merge classics"
+   commit id: "Add ben"
+   checkout add_classics
+   commit id: "Add Dune quotes"
+   commit id: "Add Psycho"
+   checkout main
+   merge add_classics id: "Merge PR 1"
+   commit id: "Add gitignore"
+   commit id: "Add advert"
 ```
 
 1. **Feature Branching:** Isolated development branch `add_classics` for catalog extension.
@@ -153,7 +161,7 @@ To maintain clean repository hygiene, [`.gitignore`](.gitignore) enforces exclus
 
 ---
 
-## 🏁 Getting Started
+## Getting Started
 
 ### Clone & Explore
 
@@ -170,7 +178,7 @@ git log --oneline --graph --all
 
 ---
 
-## 👤 Author & Credits
+## Author & Credits
 
 - **Author:** Carlos Valente ([@CFMVCarlos](https://github.com/CFMVCarlos))
 - **Learning Platform:** [Boot.dev](https://www.boot.dev/) — *Learn Git Course*
